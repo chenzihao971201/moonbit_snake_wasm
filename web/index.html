@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MoonBit Snake Wasm</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="game">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">MoonBit wasm</p>
+            <h1>Snake</h1>
+          </div>
+          <div class="stats" aria-live="polite">
+            <span id="score">0</span>
+            <small id="status">Ready</small>
+          </div>
+        </div>
+
+        <div class="stage">
+          <canvas id="board" width="720" height="720" aria-label="Snake game board"></canvas>
+        </div>
+
+        <div class="controls">
+          <div class="actions">
+            <button id="play" type="button" title="Play or pause" aria-label="Play or pause">
+              <span id="playIcon">Play</span>
+            </button>
+            <button id="restart" type="button" title="Restart" aria-label="Restart">Reset</button>
+          </div>
+
+          <label class="speed" for="speed">
+            <span>Speed</span>
+            <input id="speed" type="range" min="70" max="210" value="130" step="10" />
+          </label>
+
+          <div class="pad" aria-label="Direction controls">
+            <button data-dir="0" class="up" title="Up" aria-label="Up">&uarr;</button>
+            <button data-dir="3" class="left" title="Left" aria-label="Left">&larr;</button>
+            <button data-dir="1" class="right" title="Right" aria-label="Right">&rarr;</button>
+            <button data-dir="2" class="down" title="Down" aria-label="Down">&darr;</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+options(
+  link: {
+    "wasm": {
+      "exports": [
+        "reset",
+        "set_direction",
+        "tick",
+        "get_grid_size",
+        "get_snake_length",
+        "get_snake_x",
+        "get_snake_y",
+        "get_food_x",
+        "get_food_y",
+        "get_score",
+        "is_game_over",
+      ],
+      "export-memory-name": "memory",
+    },
+  },
+)
