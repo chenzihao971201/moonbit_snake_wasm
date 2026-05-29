@@ -1,13 +1,20 @@
-# MoonBit Snake Wasm
+# MoonBit Snake WASM
 
 一个用 MoonBit 编写游戏规则、编译成 WebAssembly，再由浏览器 Canvas 渲染的贪吃蛇 demo。
+
+## Prerequisites
+
+- MoonBit toolchain
+- Python 3, or any static file server
+
+Make sure `moon` is available in your `PATH`.
 
 ## 运行
 
 先编译 wasm：
 
 ```sh
-/Users/chenzihao/.moon/bin/moon build --target wasm
+moon build --target wasm
 ```
 
 再从项目根目录启动静态服务器：
@@ -25,7 +32,7 @@ http://localhost:8017/web/
 ## 测试
 
 ```sh
-/Users/chenzihao/.moon/bin/moon test
+moon test
 ```
 
 ## 结构
