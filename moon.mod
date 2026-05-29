@@ -13,12 +13,12 @@ name = "chenzihao/snake_wasm"
 
 version = "0.1.0"
 
-readme = "README.mbt.md"
+readme = "README.md"
 
-repository = ""
+repository = "https://github.com/chenzihao971201/moonbit_snake_wasm"
 
 license = "Apache-2.0"
 
-keywords = [ ]
+keywords = [ "moonbit", "wasm", "snake", "game" ]
 
-description = ""
+description = "A Snake game demo with gameplay logic written in MoonBit and rendered in the browser."
